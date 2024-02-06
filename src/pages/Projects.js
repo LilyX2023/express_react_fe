@@ -4,10 +4,10 @@ function Projects(props) {
 
   const projects = useLoaderData()
 
-    return projects.map((project) => (
-      <div>
+    return projects.map((project, id) => (
+      <div key={id} >
         <h1>{project.name}</h1>
-        <img src={project.image} />
+        <img src={project.image} alt={project.image}/>
         <a href={project.git}>
           <button>Github</button>
         </a>

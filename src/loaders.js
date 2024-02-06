@@ -1,6 +1,6 @@
 // BASE URL OF OUR DEPLOYED API
-// BASE URL OF OUR DEPLOYED API
-const URL = "https://zesty-moxie-3a561a.netlify.app/"
+// BASE URL OF OUR DEPLOYED API/backend
+const URL = "https://react-express-lab.onrender.com"
 
 export const projectsLoader = async () => {
     const response = await fetch(URL + "/projects")
